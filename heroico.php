@@ -10,10 +10,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super heróicos</title>
+    <script type="module" src="buscarHeroico.js"></script>
+    <script type="module" src="heroico.js"></script>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <input type="text" name="buscar_heroico" id="buscar_heroico">
+            <button id="botaoBusca">Buscar</button>
+        </nav>
     </header>
 
     <main>

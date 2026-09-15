@@ -13,7 +13,7 @@ async function buscarHeroico() {
     const heroi = herois.find(heroi => heroi.name.toLowerCase() === busca);
 
     if(!heroi) {
-        console.log("Informe um herói valido");
+        console.log("Informe um personagem valido");
         return;
     }
 

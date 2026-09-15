@@ -5,8 +5,6 @@ async function heroico() {
 
     const heroi = await resposta.json();
 
-    console.log(heroi);
-
     const heroImg = document.getElementById('hero-img');
     heroImg.src = heroi.images.md;
 

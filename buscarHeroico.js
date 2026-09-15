@@ -23,3 +23,13 @@ async function buscarHeroico() {
 const botaoBusca = document.getElementById("botaoBusca");
 
 botaoBusca.addEventListener('click', buscarHeroico);
+
+const inputBusca = document.getElementById("buscar_heroico");
+
+inputBusca.addEventListener("keydown", (evento) => {
+
+    if (evento.key === "Enter") {
+        buscarHeroico();
+    }
+
+});

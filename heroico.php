@@ -10,10 +10,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super heróicos</title>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="buscarHeroico.js"></script>
     <script type="module" src="heroico.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
+<body class="hero-page">
     <header>
         <nav>
             <input type="text" name="buscar_heroico" id="buscar_heroico">
@@ -36,12 +38,17 @@
 
                     <table class="measurements">
                         <thead>
-                            <tr>Altura</tr>
-                            <tr>Peso</tr>
+                            <tr>
+                                <th>Altura</th>
+                                <th>Peso</th>
+                            </tr>
                         </thead>
+
                         <tbody>
-                            <td id="height"></td>
-                            <td id="weight"></td>
+                            <tr>
+                                <td id="height"></td>
+                                <td id="weight"></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -55,13 +62,8 @@
             <div class="middle">
                 <div class="powerstats">
                     <h2>Status</h2>
-                    <div class="stats">
-                        ICON
-                        <div class="progress-bar">
-                            <p>Força</p>
-                            <progress id="stats-bar" value="" max="100"></progress>
-                        </div>
-                        <p></p>
+                    <div class="stats-container" id="stats-container">
+
                     </div>
                 </div>
 
